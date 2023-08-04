@@ -1,7 +1,7 @@
 from typing import Iterator, Generator, List, Optional, Tuple, Dict
 
 import hydra.utils
-from classy.data.data_drivers import QASample, QADataDriver, READERS_DICT, QA
+from classy.data.data_drivers import QASample, QADataDriver, QA
 
 import re
 import json
@@ -11,6 +11,7 @@ import logging
 
 
 logger = logging.getLogger(__name__)
+READERS_DICT = {(QA, "aida"): None, (QA, "blink"): None, (QA, "ed"): None}
 
 
 def build_context(
