@@ -25,7 +25,7 @@ def load_checkpoint(checkpoint_path: str, device: int) -> ClassyPLModule:
             model.to(torch.device(device))
         model.freeze()
     except Exception:
-        model = load_classy_module_from_checkpoint("/home/user/app/experiments/extend-longformer-large/2021-10-22/09-11-39/checkpoints/best.ckpt")
+        model = load_classy_module_from_checkpoint("/home/ubuntu/projects/extend/ExtEnD/experiments/extend-longformer-large/2021-10-22/09-11-39/checkpoints/best.ckpt")
         if device >= 0:
             model.to(torch.device(device))
         model.freeze()
