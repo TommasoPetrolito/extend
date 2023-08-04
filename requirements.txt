@@ -3,7 +3,7 @@ classy-core==0.3.2
 spacy==3.2.3
 en_core_web_sm @ https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.2.0/en_core_web_sm-3.2.0-py3-none-any.whl
 # demo ui
-streamlit==1.2.0
+streamlit==1.25.0
 st-annotated-text==2.0.0
 # demo serve
 fastapi==0.68.1
